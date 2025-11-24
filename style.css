@@ -1,0 +1,210 @@
+/* GLOBAL */
+body {
+    background-color: #050505;
+    color: #FFB6C1;
+}
+
+/* TEXT GLOW */
+.text-glow {
+    text-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+}
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #000;
+}
+::-webkit-scrollbar-thumb {
+    background: #FF1493;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #D11578;
+}
+
+/* INPUT AUTOFILL FIX */
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+    -webkit-text-fill-color: #FFB6C1;
+    -webkit-box-shadow: 0 0 0px 1000px #1A1A1A inset;
+}
+
+/* TAG SKILLS */
+.tag-skill {
+    padding: 0.5rem 1rem;
+    background: rgba(255, 105, 180, 0.1);
+    border: 1px solid rgba(255, 105, 180, 0.4);
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    color: #FFB6C1;
+}
+
+/* PROJECT CARD */
+.project-card {
+    background: #121212;
+    border: 1px solid #333;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.project-card:hover {
+    border-color: #FF1493;
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.2);
+}
+.project-icon {
+    height: 12rem;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-title {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.project-sub {
+    color: #FF1493;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+.project-desc {
+    color: #BBB;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+}
+.project-link {
+    color: #FFB6C1;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+.project-link:hover {
+    color: #FFF;
+}
+
+/* INPUTS */
+.label {
+    color: #FFB6C1;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+.input, .textarea, .select {
+    width: 100%;
+    background: #1A1A1A;
+    border: 1px solid #333;
+    border-radius: 0.6rem;
+    padding: 0.8rem 1rem;
+    color: #FFF;
+}
+.input:focus,
+.textarea:focus,
+.select:focus {
+    border-color: #FF1493;
+    outline: none;
+    box-shadow: 0 0 3px #FF1493;
+}
+
+/* SELECT DROPDOWN ICON */
+.select-icon {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0.7rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #FF1493;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+    width: 100%;
+    background: #FF1493;
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 0.6rem;
+    transition: 0.3s;
+    letter-spacing: 2px;
+}
+.submit-btn:hover {
+    background: #D11578;
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.4);
+}
+
+/* FOOTER */
+.footer {
+    background: black;
+    padding: 2rem 0;
+    border-top: 1px solid #111;
+}
+.footer-text {
+    color: #777;
+    font-size: 0.9rem;
+}
+.footer-icon {
+    color: #777;
+    transition: 0.3s;
+}
+.footer-icon:hover {
+    color: #FF1493;
+}
+
+/* MODAL */
+.alert-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+.alert-box {
+    background: #121212;
+    border: 1px solid #FF1493;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 22rem;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 50px rgba(255, 20, 147, 0.3);
+    transform: scale(0.95);
+    opacity: 0;
+    transition: 0.3s;
+}
+.alert-icon {
+    width: 4rem;
+    height: 4rem;
+    background: rgba(255, 20, 147, 0.1);
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1rem;
+}
+.alert-title {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.alert-desc {
+    color: #BBB;
+    margin-bottom: 1.5rem;
+}
+.alert-close {
+    background: #FF1493;
+    color: white;
+    padding: 0.6rem 2rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.alert-close:hover {
+    background: #D11578;
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadine Valencia Cicero | Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Load Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-pink': '#FF1493',
+                        'soft-pink': '#FFB6C1',
+                        'dark-bg': '#050505',
+                        'card-bg': '#121212',
+                    },
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['"Montserrat"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans antialiased selection:bg-neon-pink selection:text-white">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 bg-dark-bg/90 backdrop-blur-sm border-b border-pink-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <span class="font-serif text-2xl font-bold text-neon-pink tracking-wider">NVC.</span>
+                </div>
+
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-neon-pink transition-colors duration-300 text-sm uppercase tracking-widest">Home</a>
+                        <a href="#about" class="hover:text-neon-pink transition-colors duration-300 text-sm uppercase tracking-widest">About</a>
+                        <a href="#projects" class="hover:text-neon-pink transition-colors duration-300 text-sm uppercase tracking-widest">Projects</a>
+                        <a href="#contact" class="px-4 py-2 border border-neon-pink text-neon-pink rounded-full hover:bg-neon-pink hover:text-white transition-all duration-300 text-sm uppercase tracking-widest">Contact</a>
+                    </div>
+                </div>
+
+                <div class="md:hidden">
+                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-soft-pink hover:text-neon-pink focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-card-bg border-b border-pink-900/30">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="#home" class="block px-3 py-2 text-base font-medium hover:text-neon-pink">Home</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium hover:text-neon-pink">About</a>
+                <a href="#projects" class="block px-3 py-2 text-base font-medium hover:text-neon-pink">Projects</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-neon-pink">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+
+        <div class="absolute top-20 left-10 w-72 h-72 bg-neon-pink rounded-full mix-blend-multiply filter blur-[128px] opacity-20 animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-[128px] opacity-20"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="mb-8 inline-block">
+                <div class="w-32 h-32 mx-auto rounded-full border-2 border-neon-pink p-1">
+                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=2071&auto=format&fit=crop" alt="Profile" class="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition duration-500">
+                </div>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-4 tracking-tight">
+                Nadine Valencia <span class="text-neon-pink text-glow">Cicero</span>
+            </h1>
+
+            <p class="text-xl md:text-2xl text-soft-pink font-light mb-8 italic">
+                Digital Alchemist & UX Strategist
+            </p>
+
+            <p class="text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Weaving Elegance into Code. I specialize in blending technical precision with aesthetic grace to create software that feels as good as it looks.
+            </p>
+
+            <div class="flex justify-center gap-4">
+                <a href="#projects" class="bg-neon-pink text-white px-8 py-3 rounded-full font-semibold hover:bg-pink-600 hover:shadow-[0_0_20px_rgba(255,20,147,0.4)] transition-all duration-300">
+                    View My Work
+                </a>
+                <a href="#contact" class="border border-gray-600 text-gray-300 px-8 py-3 rounded-full font-semibold hover:border-neon-pink hover:text-neon-pink transition-all duration-300">
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-20 bg-card-bg">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-serif font-bold text-white mb-2">About <span class="text-neon-pink">Me</span></h2>
+                <div class="w-20 h-1 bg-neon-pink mx-auto"></div>
+            </div>
+
+            <div class="bg-dark-bg p-8 rounded-2xl border border-pink-900/20 shadow-xl">
+                <p class="text-lg leading-loose text-gray-300 mb-6">
+                    Hello! I am <strong class="text-neon-pink">Nadine</strong>. I am a passionate creator standing at the intersection of design and technology.
+                </p>
+                <p class="text-lg leading-loose text-gray-300 mb-6">
+                    With a deep appreciation for feminine strength and digital innovation, I craft user experiences that are intuitive, empowering, and visually striking.
+                </p>
+
+                <div class="flex flex-wrap gap-4 mt-8">
+                    <span class="tag-skill">UI/UX Design</span>
+                    <span class="tag-skill">Python</span>
+                    <span class="tag-skill">Web Development</span>
+                    <span class="tag-skill">Digital Art</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-20 bg-dark-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-serif font-bold text-white mb-2">Selected <span class="text-neon-pink">Works</span></h2>
+                <div class="w-20 h-1 bg-neon-pink mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Cards -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-shopping-bag text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="project-title">The Pink Horizon</h3>
+                        <p class="project-sub">E-Commerce Platform</p>
+                        <p class="project-desc">Luxury minimalist shopping experience using React & Django.</p>
+                        <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-layer-group text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="project-title">Velvet UI Kit</h3>
+                        <p class="project-sub">Design System</p>
+                        <p class="project-desc">Soft shadows, glassmorphism, elegant typography.</p>
+                        <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-brain text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="project-title">Neon Neural Net</h3>
+                        <p class="project-sub">AI Dashboard</p>
+                        <p class="project-desc">Real-time data visualization in sleek dark-mode UI.</p>
+                        <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 bg-card-bg">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-serif font-bold text-white mb-2">Get In <span class="text-neon-pink">Touch</span></h2>
+                <p class="text-gray-400">Have a project in mind? Let's create something beautiful together.</p>
+            </div>
+
+            <form id="contactForm" class="space-y-6 bg-dark-bg p-8 rounded-2xl border border-pink-900/30">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="label">Name</label>
+                        <input type="text" id="name" class="input" required>
+                    </div>
+                    <div>
+                        <label for="email" class="label">Email</label>
+                        <input type="email" id="email" class="input" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="subject" class="label">Subject</label>
+                    <div class="relative">
+                        <select id="subject" class="select">
+                            <option>General Inquiry</option>
+                            <option>Project Collaboration</option>
+                            <option>Freelance Opportunity</option>
+                            <option>Just saying Hi!</option>
+                        </select>
+                        <div class="select-icon">
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="message" class="label">Message</label>
+                    <textarea id="message" rows="5" class="textarea" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Send Message 💖
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="footer-text">
+                © 2025 Nadine Valencia Cicero. Designed with elegance.
+            </div>
+
+            <div class="flex space-x-6">
+                <a href="#" class="footer-icon"><i class="fab fa-instagram text-xl"></i></a>
+                <a href="#" class="footer-icon"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="#" class="footer-icon"><i class="fab fa-github text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CUSTOM MODAL -->
+    <div id="customAlert" class="alert-overlay hidden">
+        <div id="alertBox" class="alert-box">
+            <div class="alert-icon">
+                <i class="fas fa-heart text-3xl text-neon-pink"></i>
+            </div>
+
+            <h3 class="alert-title">Message Sent!</h3>
+            <p class="alert-desc">Thank you, <span id="alertName" class="text-soft-pink font-semibold"></span>. I'll get back to you soon.</p>
+
+            <button onclick="closeAlert()" class="alert-close">Close</button>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script>
+        const form = document.getElementById('contactForm');
+        const alertOverlay = document.getElementById('customAlert');
+        const alertBox = document.getElementById('alertBox');
+        const alertName = document.getElementById('alertName');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nameValue = document.getElementById('name').value;
+            alertName.textContent = nameValue;
+
+            alertOverlay.classList.remove('hidden');
+
+            setTimeout(() => {
+                alertBox.classList.remove('scale-95', 'opacity-0');
+                alertBox.classList.add('scale-100', 'opacity-100');
+            }, 10);
+
+            form.reset();
+        });
+
+        function closeAlert() {
+            alertBox.classList.remove('scale-100', 'opacity-100');
+            alertBox.classList.add('scale-95', 'opacity-0');
+
+            setTimeout(() => {
+                alertOverlay.classList.add('hidden');
+            }, 300);
+        }
+    </script>
+
+</body>
+</html>
